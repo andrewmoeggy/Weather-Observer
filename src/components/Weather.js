@@ -15,16 +15,17 @@ const Weather = ({ weatherData, city, tempurature, tempMin, tempMax, description
           Location:
           <span className="weather_data">{city}</span>
         </p>}
+      {description &&
+        <p><WiCloud className="weather_icon" />
+          Conditions:
+          <span className="weather_data"> {description}</span>
+        </p>}
       {tempurature &&
         <p><WiThermometer className="weather_icon" />
           Tempurature:
           <span className="weather_data">{formatTemp(tempurature)} &deg; F</span>
         </p>}
-      {description &&
-        <p><WiCloud className="weather_icon" />
-          Conditions:
-          <span className="weather_data">{description}</span>
-        </p>}
+
       {humidity &&
         <p><WiHumidity className="weather_icon" />
           Humidity:
@@ -42,8 +43,9 @@ const Weather = ({ weatherData, city, tempurature, tempMin, tempMax, description
           </p>
         </>
       }
+
       {error &&
-        <p>{error}</p>}
+        <p className="error">{error}</p>}
     </div>
   );
 }

@@ -20,22 +20,24 @@ body {
 
 .App {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
   height: 70vh;
+  margin-top: 5%;
+  padding: 1rem;
 }
 
-.grid_left, .grid_right {
+.grid_top, .grid_bottom {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.grid_left {
-  margin-left: 20%;
+
+.grid_top {
+  margin-bottom: 2rem;
 }
-.grid_right {
-  margin-right: 20%;
-}
+
 .main-icon {
   font-size: 6rem;
   color: orange;
@@ -63,10 +65,12 @@ body {
   padding: 1rem;
   outline: none;
   border: none;
-  background-color: rgb(211, 211, 211);
-  color: white;
+  background-color: rgb(232, 240, 254);
+  color: #333;
   border-radius: 3px;
   margin-bottom: 2rem;
+  font-family: inherit;
+  font-size: 1.5rem;
 }
 
 .btn {
@@ -86,28 +90,36 @@ body {
 
 .weather {
   font-size: 1.8rem;
-  margin-top: 8%;
 }
 
 .weather p {
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: .5px solid rgb(226, 226, 226);
 }
 
+.weather p:nth-child(6) {
+  border-bottom: none;
+}
 .weather_data {
   color: black;
   text-transform: capitalize;
-  padding-left: 1rem;
-  text-align: end;
+  margin-left: auto;
+  padding-left: 2rem;
 }
 
 .weather_icon {
-  font-size: 4rem;
-  color: black;
+  font-size: 3rem;
 }
 .rotate {
   transform: rotate(180deg);
+}
+
+.error {
+  align-self: flex-start;
+  color: red;
 }
 
 .weather p:nth-child(1) .weather_icon {
@@ -115,21 +127,27 @@ body {
 }
 
 .weather p:nth-child(2) .weather_icon {
-  color: rgb(175, 130, 46);
+  color:   rgb(201, 226, 255);;
 }
 
 .weather p:nth-child(3) .weather_icon {
-  color: rgb(198, 198, 198);
+  color:  rgb(179, 44, 44);
 }
 
 .weather p:nth-child(4) .weather_icon {
-  color: #0077be;
+  color: rgb(147, 186, 229);
 }
 
 .weather p:nth-child(5) .weather_icon {
-  color: rgb(255, 214, 170);
+  color: rgb(255, 147, 41);
 }
 
 .weather p:nth-child(6) .weather_icon {
-  color: rgb(201, 226, 255);
+  color: #0077be 
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
 }

@@ -44,11 +44,11 @@ function App() {
 
   return (
     <div className="App">
-      <div className="grid_left">
+      <div className="grid_top">
         <Title />
         <Form getWeather={getWeather} />
       </div>
-      <div className="grid_right">
+      <div className="grid_bottom">
         <Weather
           weatherData={weatherData}
           city={city}
