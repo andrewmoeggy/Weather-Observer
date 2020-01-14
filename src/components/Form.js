@@ -3,9 +3,9 @@ import React from 'react';
 const Form = ({ getWeather }) => {
 
   return (
-    <form onSubmit={getWeather}>
-      <input type="text" name="city" placeholder="city" />
-      <button>Get Weather</button>
+    <form class="form" onSubmit={getWeather}>
+      <input class="form_input" type="text" name="city" placeholder="City" />
+      <button class="btn">Get Weather</button>
     </form>
   );
 }

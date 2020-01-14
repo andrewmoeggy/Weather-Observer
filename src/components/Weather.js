@@ -8,14 +8,14 @@ const Weather = ({ weatherData, city, tempurature, tempMin, tempMax, description
   }
 
   return (
-    <>
+    <div className="weather">
       {city && <p>Location: {city}</p>}
       {tempurature && <p>Tempurature: {formatTemp(tempurature)} &deg; F</p>}
       {description && <p>Conditions: {description}</p>}
       {humidity && <p>Humidity: {humidity} %</p>}
       {tempMin && tempMax && <><p>Today's min: {formatTemp(tempMin)} &deg; F</p> <p>Today's max: {formatTemp(tempMax)} &deg; F</p></>}
       {error && <p>{error}</p>}
-    </>
+    </div>
   );
 }
 

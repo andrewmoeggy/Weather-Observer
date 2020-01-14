@@ -3,8 +3,8 @@ import React from 'react';
 const Title = () => {
   return (
     <>
-      <h1>Weather Observer</h1>
-      <p>Enter in a U.S. city!</p>
+      <h1 className="title">Weather Observer</h1>
+      <p className="title_paragraph">Enter in a U.S. city!</p>
     </>
   );
 }

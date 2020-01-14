@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: monospace, sans-serif;
+  color: #888;
+  font-weight: 400;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 80vh;
+}
+
+.grid_left, .grid_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: black;
+  margin-bottom: 3rem;
+  font-size: 3.3rem;
+}
+
+.title_paragraph {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.form {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_input, .form_input:active {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  background-color: rgb(211, 211, 211);
+  color: white;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: block;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  color: white;
+  background-color: rgb(101, 162, 70);
+  border: none;
+  border-radius: 1rem;
+  transition: all .4s;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(58, 93, 41);
+}

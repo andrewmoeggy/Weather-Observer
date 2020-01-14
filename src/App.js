@@ -44,17 +44,21 @@ function App() {
 
   return (
     <div className="App">
-      <Title />
-      <Form getWeather={getWeather} />
-      <Weather
-        weatherData={weatherData}
-        city={city}
-        tempurature={tempurature}
-        humidity={humidity}
-        description={description}
-        error={error}
-        tempMin={tempMin}
-        tempMax={tempMax} />
+      <div className="grid_left">
+        <Title />
+        <Form getWeather={getWeather} />
+      </div>
+      <div className="grid_right">
+        <Weather
+          weatherData={weatherData}
+          city={city}
+          tempurature={tempurature}
+          humidity={humidity}
+          description={description}
+          error={error}
+          tempMin={tempMin}
+          tempMax={tempMax} />
+      </div>
     </div>
   );
 }
