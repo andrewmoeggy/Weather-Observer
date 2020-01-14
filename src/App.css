@@ -21,7 +21,7 @@ body {
 .App {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 80vh;
+  height: 70vh;
 }
 
 .grid_left, .grid_right {
@@ -30,7 +30,17 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.grid_left {
+  margin-left: 20%;
+}
+.grid_right {
+  margin-right: 20%;
+}
+.main-icon {
+  font-size: 6rem;
+  color: orange;
+  margin-bottom: 2rem;
+}
 .title {
   color: black;
   margin-bottom: 3rem;
@@ -56,7 +66,7 @@ body {
   background-color: rgb(211, 211, 211);
   color: white;
   border-radius: 3px;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .btn {
@@ -72,4 +82,54 @@ body {
 .btn:hover {
   cursor: pointer;
   background-color: rgb(58, 93, 41);
+}
+
+.weather {
+  font-size: 1.8rem;
+  margin-top: 8%;
+}
+
+.weather p {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.weather_data {
+  color: black;
+  text-transform: capitalize;
+  padding-left: 1rem;
+  text-align: end;
+}
+
+.weather_icon {
+  font-size: 4rem;
+  color: black;
+}
+.rotate {
+  transform: rotate(180deg);
+}
+
+.weather p:nth-child(1) .weather_icon {
+  color: black;
+}
+
+.weather p:nth-child(2) .weather_icon {
+  color: rgb(175, 130, 46);
+}
+
+.weather p:nth-child(3) .weather_icon {
+  color: rgb(198, 198, 198);
+}
+
+.weather p:nth-child(4) .weather_icon {
+  color: #0077be;
+}
+
+.weather p:nth-child(5) .weather_icon {
+  color: rgb(255, 214, 170);
+}
+
+.weather p:nth-child(6) .weather_icon {
+  color: rgb(201, 226, 255);
 }
