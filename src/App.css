@@ -88,6 +88,25 @@ body {
   background-color: rgb(58, 93, 41);
 }
 
+.clear-btn, .transparent {
+  background-color: red;
+  color: white;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: .5rem;
+  transition: all .4s;
+  outline: none;
+}
+.clear-btn:hover {
+  cursor: pointer;
+  background-color: rgb(160, 40, 40);
+}
+
+.transparent {
+  background-color: transparent;
+  color: transparent;
+  outline: none;
+}
 .weather {
   font-size: 1.8rem;
 }

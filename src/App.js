@@ -31,22 +31,26 @@ function App() {
       setDescription(data.weather[0].description);
       setError('');
     } else {
-      setWeatherData('');
-      setCity('');
-      setTempurature('');
-      setTempMin('');
-      setTempMax('');
-      setHumidity('');
-      setDescription('');
+      clearData();
       setError('Please enter your city');
     }
+  }
+
+  const clearData = () => {
+    setWeatherData('');
+    setCity('');
+    setTempurature('');
+    setTempMin('');
+    setTempMax('');
+    setHumidity('');
+    setDescription('');
   }
 
   return (
     <div className="App">
       <div className="grid_top">
         <Title />
-        <Form getWeather={getWeather} />
+        <Form getWeather={getWeather} city={city} clearData={clearData} />
       </div>
       <div className="grid_bottom">
         <Weather
