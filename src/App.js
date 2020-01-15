@@ -21,7 +21,9 @@ function App() {
     const city = e.target.elements.city.value;
     const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},us&APPID=${API_KEY}`);
     const data = await api_call.json();
-    if (city) {
+    if (data.message === 'city not found') {
+      setError('City not found, please try again');
+    } else if (city) {
       setWeatherData(data);
       setCity(data.name);
       setTempurature(data.main.temp);
