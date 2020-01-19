@@ -2,7 +2,6 @@ import React from 'react';
 import { WiGaleWarning, WiThermometer, WiCloud, WiHumidity, WiDirectionUp } from 'react-icons/wi';
 
 const Weather = ({ weatherData, city, tempurature, tempMin, tempMax, description, humidity, error }) => {
-  console.log(weatherData)
 
   const formatTemp = (kelvinTemp) => {
     return ((kelvinTemp - 273.15) * (9 / 5) + 32).toFixed(2);
