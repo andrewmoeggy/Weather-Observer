@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Title from './components/Title';
 import Form from './components/Form';
 import Weather from './components/Weather';
+import Footer from './components/Footer';
 import './App.css';
 
 const API_KEY = '55550e48c7862436ebdca1ad1d4e2183';
@@ -65,6 +66,7 @@ function App() {
           tempMin={tempMin}
           tempMax={tempMax} />
       </div>
+      <Footer />
     </div>
   );
 }
