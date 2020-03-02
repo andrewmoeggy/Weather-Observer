@@ -1,7 +1,7 @@
-## Todoist - Clone
-Not your average todolist. App built with React (Custom Hooks, Context), Firebase, and SCSS.  The app lets you add todo items in different category and project sections while storing them in a firebase db.  
+## Weatherly 
+A simple weather app that displays weather data for major U.S. cities. Enter in any valid U.S. city name to get data on current weather conditions. 
 
-Hosted at: https://peaceful-carson-d57c00.netlify.com/
+Hosted at: https://weather-observer.netlify.com/
 
 ## Available Scripts
 
