@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Todoist - Clone
+Not your average todolist. App built with React (Custom Hooks, Context), Firebase, and SCSS.  The app lets you add todo items in different category and project sections while storing them in a firebase db.  
+
 
 ## Available Scripts
 
