@@ -1,4 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Weatherly 
+A simple weather app that displays weather data for major U.S. cities. Enter in any valid U.S. city name to get data on current weather conditions. 
+
+Hosted at: https://weather-observer.netlify.com/
 
 ## Available Scripts
 
